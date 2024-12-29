@@ -1,0 +1,39 @@
+form {
+    margin: 0 auto;
+    width: 380px;
+  }
+  input {
+    border-radius: 4px;
+    width: 272px;
+    /* height: 40px; */
+    border: 1px solid #808080;
+  
+    font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+  
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  }
+  input:active,:focus {
+  color: #2e2f42;
+  
+  }
+ button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 75px;
+    height: 40px;
+    background: #cfcfcf;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: .04em;
+    color: #fff;
+    background: #4e75ff;
+  margin-left: 10px;
+  }
