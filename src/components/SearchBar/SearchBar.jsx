@@ -17,8 +17,9 @@ const SearchBar = ({ handleChangeQuery }) => {
 
   return (
     <header>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={s.form}>
         <input
+          className={s.input}
           type="text"
           autoComplete="off"
           autoFocus
@@ -26,7 +27,9 @@ const SearchBar = ({ handleChangeQuery }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button type="submit" className={s.button}>
+          Search
+        </button>
       </form>
     </header>
   );
