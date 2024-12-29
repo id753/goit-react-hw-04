@@ -60,16 +60,9 @@ const App = () => {
     }
   }, [page, query]);
 
-  if (isLoading) {
-    return <Loader />;
-  }
-
-  if (isError) {
-    return <ErrorMessage />;
-  }
-
-  const handleChangePage = () => {
-    console.log("Previous page:", page);
+  const handleChangePage = (e) => {
+    e.preventDefault();
+    // console.log("Previous page:", page);
     setPage((prev) => prev + 1);
   };
 
@@ -97,10 +90,19 @@ const App = () => {
     <>
       <Toaster position="top-right" reverseOrder={false} />
       <SearchBar handleChangeQuery={handleChangeQuery} />
-      <ImageGallery articles={articles} onImageClick={openModal} />
-      {articles.length > 0 && (
-        <LoadMoreBtn handleChangePage={handleChangePage} />
+
+      {isLoading && <Loader />}
+      {isError && <ErrorMessage />}
+
+      {!isLoading && !isError && (
+        <>
+          <ImageGallery articles={articles} onImageClick={openModal} />
+          {articles.length > 0 && (
+            <LoadMoreBtn handleChangePage={handleChangePage} />
+          )}
+        </>
       )}
+
       <ImageModal
         isOpen={isModalOpen}
         onClose={closeModal}
