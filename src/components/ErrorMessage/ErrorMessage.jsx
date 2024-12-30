@@ -3,7 +3,7 @@
 const ErrorMessage = () => {
   return (
     <div>
-<p>Error loading images.</p>;
+      <p style={{ textAlign: "center" }}>Error loading images.</p>
     </div>
   );
 };
