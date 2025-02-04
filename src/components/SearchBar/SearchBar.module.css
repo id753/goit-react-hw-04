@@ -1,50 +1,50 @@
 .header {
   position: sticky; /* Делает элемент "липким", он остается видимым при прокрутке страницы */
-  z-index: 1; /* Задает порядок отображения, чтобы элемент был поверх других */
-  top: 0; /* Закрепляет элемент у верхнего края окна */
-  right: 0; /* Выравнивает элемент относительно правого края */
+  z-index: 1;
+  top: 0;
+  right: 0;
   height: auto; /* Высота адаптируется под содержимое */
-  padding: 5px; /* Отступы внутри элемента */
-  background-color: blueviolet; /* Цвет фона элемента */
-  border-radius: 8px; /* Закругляет углы элемента */
-  display: flex; /* Устанавливает flex-контейнер для управления дочерними элементами */
-  justify-content: center; /* Выравнивает дочерние элементы по центру по горизонтали */
-  align-items: center; /* Выравнивает дочерние элементы по центру по вертикали */
+  padding: 5px;
+  background-color: blueviolet;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
   overflow: hidden; /* Скрывает содержимое, выходящее за границы элемента */
-  width: 100%; /* Элемент занимает всю доступную ширину */
-  max-width: 500px; /* Устанавливает максимальную ширину элемента */
+  width: 100%;
+  max-width: 500px;
 }
 
 .input_form {
-  display: flex; /* Устанавливает flex-контейнер для дочерних элементов */
-  align-items: center; /* Выравнивает элементы по центру по вертикали */
-  gap: 10px; /* Задает промежуток между дочерними элементами */
-  padding: 5px; /* Внутренние отступы элемента */
-  background-color: #f1f3f4; /* Цвет фона элемента */
-  border-radius: 8px; /* Закругляет углы элемента */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: #f1f3f4;
+  border-radius: 8px;
 }
 
 .input {
-  border: none; /* Убирает рамку вокруг элемента */
+  border: none;
   outline: none; /* Убирает обводку при фокусе */
-  font-size: 18px; /* Размер текста внутри поля ввода */
+  font-size: 18px;
   flex-grow: 1; /* Поле ввода занимает все доступное пространство */
-  background: transparent; /* Фон элемента становится прозрачным */
+  background: transparent;
 }
 
 .button {
   cursor: pointer; /* Изменяет курсор на указатель при наведении */
-  transition: color 0.3s; /* Плавный переход для изменения цвета за 0.3 секунды */
+  transition: color 0.3s;
 }
 
 .button:hover {
-  transform: scale(1.1); /* Увеличивает кнопку при наведении */
+  transform: scale(1.1);
 }
 
 /* При наведении на кнопку */
 .button:hover .search_icon {
-  color: blueviolet; /* Меняет цвет иконки на blueviolet */
+  color: blueviolet;
 }
